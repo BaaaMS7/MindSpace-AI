@@ -5,7 +5,8 @@ import feather from "feather-icons";
 import { apiClient, getApiErrorMessage } from "./api/client";
 
 const STREAMLIT_URL =
-  import.meta.env.VITE_STREAMLIT_URL || "http://localhost:8501";
+  import.meta.env.VITE_STREAMLIT_URL ||
+  "https://mindspace-ai-analytics.streamlit.app";
 
 const STREAMLIT_BASE_URL = STREAMLIT_URL.replace(/\/+$/, "");
 

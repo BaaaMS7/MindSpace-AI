@@ -383,6 +383,12 @@ Dashboard Streamlit hanya membutuhkan MongoDB dan kredensial admin. Backend Expr
 
 ---
 
+## Dashboard Streamlit Cloud
+
+Dashboard analitik dapat diakses melalui:
+
+https://mindspace-ai-analytics.streamlit.app
+
 ## 12. File yang tidak boleh di-push
 
 ```text
