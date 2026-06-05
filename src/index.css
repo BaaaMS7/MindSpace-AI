@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ms-bg: #131314;
+  --color-ms-surface: #1e1f20;
+  --color-ms-hover: #282a2c;
+  --color-ms-text: #e3e3e3;
+  --color-ms-textmuted: #c4c7c5;
+  --color-ms-primary: #a8c7fa;
+
+  --color-mood-tenang: #6ee7b7;
+  --color-mood-senang: #93c5fd;
+  --color-mood-cemas: #fcd34d;
+  --color-mood-sedih: #a78bfa;
+  --color-mood-stres: #fca5a5;
+
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  background: #131314;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #131314;
+}
+
+body {
+  overflow: hidden;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #4b4d50;
+  border-radius: 10px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.typing-dot {
+  animation: typing 1.4s infinite ease-in-out both;
+}
+
+@keyframes typing {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+
+  40% {
+    transform: scale(1);
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(
+    74deg,
+    #4285f4 0%,
+    #9b72cb 25%,
+    #d96570 50%,
+    #9b72cb 75%,
+    #4285f4 100%
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 6s ease-in-out infinite;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.chart-circle {
+  fill: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition:
+    stroke-dasharray 1.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+    stroke-dashoffset 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.likert-option input:checked + div {
+  border-color: #a8c7fa !important;
+  color: #a8c7fa !important;
+}

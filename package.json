@@ -1,0 +1,51 @@
+{
+  "name": "mindspace-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:frontend": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "dev:server": "node --watch server/index.js",
+    "server": "node server/index.js",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "dev:classifier": "python -m uvicorn ml_api.app:app --host 127.0.0.1 --port 8002",
+    "data:prep": "python data_science/01_data_wrangling_eda_feature_engineering.py",
+    "data:abtest": "python data_science/02_ab_testing_evaluation.py",
+    "train:classifier": "python ml_api/training/train_mood_classifier.py",
+    "dashboard:streamlit": "python -m streamlit run ds_dashboard/streamlit_app.py --server.headless true --server.runOnSave false --browser.gatherUsageStats false",
+    "dev:streamlit": "python -m streamlit run ds_dashboard/streamlit_app.py",
+    "dev:clean": "node scripts/clean-vite-cache.js && vite --host 127.0.0.1 --port 5173 --strictPort --force",
+    "test:mongo": "node scripts/test-mongodb.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "feather-icons": "^4.29.2",
+    "firebase": "^12.13.0",
+    "mongodb": "^6.21.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "^7.15.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/postcss": "^4.3.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "postcss": "^8.5.15",
+    "tailwindcss": "^4.3.0",
+    "vite": "^8.0.12"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "rows": 240,
+  "columns": [
+    "user_id",
+    "created_at",
+    "age",
+    "mood",
+    "tidur",
+    "aktivitas",
+    "energi",
+    "stres",
+    "sosial",
+    "wellbeing_score",
+    "label",
+    "ab_group",
+    "completed_recommendation",
+    "session_seconds",
+    "stress_reversed",
+    "sleep_energy_gap",
+    "social_activity_score",
+    "risk_index",
+    "week"
+  ],
+  "missing_values": {
+    "user_id": 0,
+    "created_at": 0,
+    "age": 0,
+    "mood": 0,
+    "tidur": 0,
+    "aktivitas": 0,
+    "energi": 0,
+    "stres": 0,
+    "sosial": 0,
+    "wellbeing_score": 0,
+    "label": 0,
+    "ab_group": 0,
+    "completed_recommendation": 0,
+    "session_seconds": 0,
+    "stress_reversed": 0,
+    "sleep_energy_gap": 0,
+    "social_activity_score": 0,
+    "risk_index": 0,
+    "week": 0
+  },
+  "label_counts": {
+    "Distressed": 66,
+    "Good": 54,
+    "Neutral": 44,
+    "Low": 38,
+    "Great": 38
+  },
+  "average_metrics_by_label": {
+    "wellbeing_score": {
+      "Distressed": 9.3,
+      "Good": 24.56,
+      "Great": 27.63,
+      "Low": 13.82,
+      "Neutral": 18.93
+    },
+    "risk_index": {
+      "Distressed": 22.21,
+      "Good": 9.61,
+      "Great": 7.11,
+      "Low": 18.61,
+      "Neutral": 14.23
+    },
+    "session_seconds": {
+      "Distressed": 196.18,
+      "Good": 190.72,
+      "Great": 196.16,
+      "Low": 195.11,
+      "Neutral": 190.7
+    }
+  },
+  "completion_rate_by_ab_group": {
+    "A": 0.7059,
+    "B": 0.7603
+  },
+  "correlation_matrix": {
+    "mood": {
+      "mood": 1.0,
+      "tidur": 0.759,
+      "aktivitas": 0.714,
+      "energi": 0.734,
+      "stres": -0.741,
+      "sosial": 0.69,
+      "wellbeing_score": 0.88,
+      "risk_index": -0.89
+    },
+    "tidur": {
+      "mood": 0.759,
+      "tidur": 1.0,
+      "aktivitas": 0.716,
+      "energi": 0.771,
+      "stres": -0.708,
+      "sosial": 0.716,
+      "wellbeing_score": 0.887,
+      "risk_index": -0.898
+    },
+    "aktivitas": {
+      "mood": 0.714,
+      "tidur": 0.716,
+      "aktivitas": 1.0,
+      "energi": 0.721,
+      "stres": -0.768,
+      "sosial": 0.725,
+      "wellbeing_score": 0.883,
+      "risk_index": -0.826
+    },
+    "energi": {
+      "mood": 0.734,
+      "tidur": 0.771,
+      "aktivitas": 0.721,
+      "energi": 1.0,
+      "stres": -0.738,
+      "sosial": 0.673,
+      "wellbeing_score": 0.879,
+      "risk_index": -0.887
+    },
+    "stres": {
+      "mood": -0.741,
+      "tidur": -0.708,
+      "aktivitas": -0.768,
+      "energi": -0.738,
+      "stres": 1.0,
+      "sosial": -0.703,
+      "wellbeing_score": -0.884,
+      "risk_index": 0.881
+    },
+    "sosial": {
+      "mood": 0.69,
+      "tidur": 0.716,
+      "aktivitas": 0.725,
+      "energi": 0.673,
+      "stres": -0.703,
+      "sosial": 1.0,
+      "wellbeing_score": 0.855,
+      "risk_index": -0.857
+    },
+    "wellbeing_score": {
+      "mood": 0.88,
+      "tidur": 0.887,
+      "aktivitas": 0.883,
+      "energi": 0.879,
+      "stres": -0.884,
+      "sosial": 0.855,
+      "wellbeing_score": 1.0,
+      "risk_index": -0.994
+    },
+    "risk_index": {
+      "mood": -0.89,
+      "tidur": -0.898,
+      "aktivitas": -0.826,
+      "energi": -0.887,
+      "stres": 0.881,
+      "sosial": -0.857,
+      "wellbeing_score": -0.994,
+      "risk_index": 1.0
+    }
+  }
+}

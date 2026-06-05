@@ -1,0 +1,12 @@
+{
+  "conversion_a": 0.7059,
+  "conversion_b": 0.7603,
+  "uplift_absolute": 0.0544,
+  "uplift_relative_percent": 7.71,
+  "z_score": 0.9537,
+  "p_value": 0.340238,
+  "significant_at_0_05": false,
+  "n_a": 119,
+  "n_b": 121,
+  "interpretation": "Variasi B layak dipertimbangkan karena conversion rate lebih baik."
+}

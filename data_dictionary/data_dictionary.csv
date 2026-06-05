@@ -1,0 +1,15 @@
+field,type,description,example
+user_id,string,ID anonim pengguna sintetis,U0001
+created_at,date,Tanggal pengisian kuesioner,2026-05-01
+age,integer,Usia pengguna. Batas input aplikasi 10-100 tahun,21
+mood,integer 1-5,Skor suasana hati; makin besar makin baik,5
+tidur,integer 1-5,Skor kualitas tidur; makin besar makin baik,4
+aktivitas,integer 1-5,Skor aktivitas fisik; makin besar makin aktif,3
+energi,integer 1-5,Skor energi harian; makin besar makin bertenaga,4
+stres,integer 1-5,Skor stres; makin besar makin tertekan. Dibalik saat membuat wellbeing_score,2
+sosial,integer 1-5,Skor interaksi sosial; makin besar makin baik,4
+wellbeing_score,integer,Skor rekayasa fitur: mood+tidur+aktivitas+energi+(6-stres)+sosial,25
+label,categorical,"Target klasifikasi mood: Great, Good, Neutral, Low, Distressed",Good
+ab_group,categorical,"Grup eksperimen dashboard/rekomendasi: A kontrol, B variasi",B
+completed_recommendation,binary,Apakah pengguna menyelesaikan aksi rekomendasi awal,1
+session_seconds,integer,Durasi sesi pengguna dalam detik,210
